@@ -102,7 +102,7 @@ def send_spoof_packets():
 
 
 def packet_sniffer(interface):
-  packet = scapy.sniff(iface = interface, store = False, prn = process_sniffed_pkt) 
+  packet = scapy.sniff(iface = interface, store = False, prn = process_sniffer_pkt) 
 
 
 
