@@ -58,7 +58,7 @@ def gateway_info(network_info):
       for row in result:
          
          if iface["ip"] in row:
-             iface_name = match_iface_name(row)
+             iface_name = match_iface_names(row)
              gateways.append({"iface" : iface_name, "ip" : iface["ip"], "mac" : iface["mac"]})
      
       return gateways
